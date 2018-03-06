@@ -3,7 +3,7 @@
   <parent>
     <groupId>com.pinyougou</groupId>
     <artifactId>pinyougou-parent</artifactId>
-    <version>0.0.5-SNAPSHOT</version>
+    <version>1.0.0-SNAPSHOT</version>
   </parent>
   <artifactId>pinyougou-manager-web</artifactId>
   <packaging>war</packaging>
@@ -82,7 +82,7 @@
 	<dependency>
 		<groupId>com.pinyougou</groupId>
 		<artifactId>pinyougou-sellergoods-interface</artifactId>
-		<version>0.0.5-SNAPSHOT</version>
+		<version>1.0.0-SNAPSHOT</version>
 	</dependency>
    </dependencies>
   
