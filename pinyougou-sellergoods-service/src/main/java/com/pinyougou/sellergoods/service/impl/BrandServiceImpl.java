@@ -34,4 +34,9 @@ public class BrandServiceImpl implements BrandService {
         return new PageResult(page.getTotal(), page.getResult());
     }
 
+    @Override
+    public void add(TbBrand brand) {
+        brandMapper.insert(brand);
+    }
+
 }
