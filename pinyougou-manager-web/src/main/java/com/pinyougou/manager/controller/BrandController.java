@@ -21,17 +21,32 @@ public class BrandController {
 
 	@Reference
 	private BrandService brandService;
-	
+
+	/**
+	 * 查询所有
+	 * @return
+	 */
 	@RequestMapping("/findAll")
 	public List<TbBrand> findAll(){
 		return brandService.findAll();		
 	}
 
+	/**
+	 * 分页查询
+	 * @param page
+	 * @param rows
+	 * @return
+	 */
 	@RequestMapping("/findPage")
 	public PageResult findPage(int page,int rows){
 		return brandService.findPage(page,rows);
 	}
 
+	/**
+	 * 新增
+	 * @param brand
+	 * @return
+	 */
 	@RequestMapping("/add")
 	public Result add(@RequestBody TbBrand brand){
 		try {
@@ -43,5 +58,38 @@ public class BrandController {
 		}
 
 	}
+
+	/**
+	 * 根据id查询
+	 * @param id
+	 * @return
+	 */
+	@RequestMapping("/findOne")
+	public TbBrand findOne(Long id){
+		return brandService.findOne(id);
+	}
+
+	/**
+	 * 修改
+	 * @param brand
+	 * @return
+	 */
+	@RequestMapping("/update")
+	public Result update(@RequestBody TbBrand brand){
+		try {
+			brandService.update(brand);
+			return new Result(true,"修改成功");
+		} catch (Exception e) {
+			e.printStackTrace();
+			return new Result(false,"修改失败");
+		}
+	}
+
+
+
+
+
+
+
 	
 }
