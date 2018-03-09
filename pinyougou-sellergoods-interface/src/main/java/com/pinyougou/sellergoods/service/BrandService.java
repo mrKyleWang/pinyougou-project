@@ -28,6 +28,15 @@ public interface BrandService {
     PageResult findPage(int pageNum, int pageSize);
 
     /**
+     * 条件分页查询
+     * @param brand
+     * @param pageNum
+     * @param pageSize
+     * @return
+     */
+    PageResult findPage(TbBrand brand, int pageNum, int pageSize);
+
+    /**
      * 添加
      * @param brand
      */

@@ -43,6 +43,20 @@ public class BrandController {
 	}
 
 	/**
+	 * 条件分页查询
+	 * @param brand
+	 * @param page
+	 * @param rows
+	 * @return
+	 */
+	@RequestMapping("/search")
+	public PageResult findPAge(@RequestBody TbBrand brand, int page, int rows){
+		return brandService.findPage(brand,page,rows);
+	}
+
+
+
+	/**
 	 * 新增
 	 * @param brand
 	 * @return
