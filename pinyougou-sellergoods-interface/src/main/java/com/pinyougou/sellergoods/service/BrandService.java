@@ -6,6 +6,7 @@ import com.pinyougou.pojo.TbBrand;
 import java.util.List;
 
 /**
+ * 服务层接口
  * @author Kyle.Wang
  * 2018-03-08 21:01
  */
