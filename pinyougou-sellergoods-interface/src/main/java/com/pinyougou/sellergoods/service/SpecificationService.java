@@ -1,43 +1,43 @@
 package com.pinyougou.sellergoods.service;
-import java.util.List;
-import java.util.Map;
 
+import com.pinyougou.entity.PageResult;
 import com.pinyougou.pojo.TbSpecification;
 import com.pinyougou.pojogroup.Specification;
 
-import entity.PageResult;
+import java.util.List;
+import java.util.Map;
 
 /**
  * 服务层接口
  * @author Kyle.Wang
  * 2018-03-13 23:27
  */
-public interface SpecificationService {
+interface SpecificationService {
 
 	/**
 	 * 返回全部列表
 	 * @return
 	 */
-	public List<TbSpecification> findAll();
+	List<TbSpecification> findAll();
 	
 	
 	/**
 	 * 返回分页列表
 	 * @return
 	 */
-	public PageResult findPage(int pageNum, int pageSize);
+	PageResult findPage(int pageNum, int pageSize);
 	
 	
 	/**
 	 * 增加
 	*/
-	public void add(Specification specification);
+	void add(Specification specification);
 	
 	
 	/**
 	 * 修改
 	 */
-	public void update(Specification specification);
+	void update(Specification specification);
 	
 
 	/**
@@ -45,14 +45,14 @@ public interface SpecificationService {
 	 * @param id
 	 * @return
 	 */
-	public Specification findOne(Long id);
+	Specification findOne(Long id);
 	
 	
 	/**
 	 * 批量删除
 	 * @param ids
 	 */
-	public void delete(Long[] ids);
+	void delete(Long[] ids);
 
 	/**
 	 * 分页
@@ -60,9 +60,9 @@ public interface SpecificationService {
 	 * @param pageSize 每页记录数
 	 * @return
 	 */
-	public PageResult findPage(TbSpecification specification, int pageNum, int pageSize);
+	PageResult findPage(TbSpecification specification, int pageNum, int pageSize);
 	
 	
-	public List<Map> selectOptionList();
+	List<Map> selectOptionList();
 	
 }

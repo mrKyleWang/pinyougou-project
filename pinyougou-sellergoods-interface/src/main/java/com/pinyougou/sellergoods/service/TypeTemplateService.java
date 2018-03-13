@@ -1,42 +1,41 @@
 package com.pinyougou.sellergoods.service;
-import java.util.List;
-import java.util.Map;
 
+import com.pinyougou.entity.PageResult;
 import com.pinyougou.pojo.TbTypeTemplate;
 
-import entity.PageResult;
+import java.util.List;
 
 /**
  * 服务层接口
  * @author Kyle.Wang
  * 2018-03-13 23:27
  */
-public interface TypeTemplateService {
+interface TypeTemplateService {
 
 	/**
 	 * 返回全部列表
 	 * @return
 	 */
-	public List<TbTypeTemplate> findAll();
+	List<TbTypeTemplate> findAll();
 	
 	
 	/**
 	 * 返回分页列表
 	 * @return
 	 */
-	public PageResult findPage(int pageNum, int pageSize);
+	PageResult findPage(int pageNum, int pageSize);
 	
 	
 	/**
 	 * 增加
 	*/
-	public void add(TbTypeTemplate typeTemplate);
+	void add(TbTypeTemplate typeTemplate);
 	
 	
 	/**
 	 * 修改
 	 */
-	public void update(TbTypeTemplate typeTemplate);
+	void update(TbTypeTemplate typeTemplate);
 	
 
 	/**
@@ -44,14 +43,14 @@ public interface TypeTemplateService {
 	 * @param id
 	 * @return
 	 */
-	public TbTypeTemplate findOne(Long id);
+	TbTypeTemplate findOne(Long id);
 	
 	
 	/**
 	 * 批量删除
 	 * @param ids
 	 */
-	public void delete(Long[] ids);
+	void delete(Long[] ids);
 
 	/**
 	 * 分页
@@ -59,7 +58,7 @@ public interface TypeTemplateService {
 	 * @param pageSize 每页记录数
 	 * @return
 	 */
-	public PageResult findPage(TbTypeTemplate typeTemplate, int pageNum, int pageSize);
+	PageResult findPage(TbTypeTemplate typeTemplate, int pageNum, int pageSize);
 	
 
 	

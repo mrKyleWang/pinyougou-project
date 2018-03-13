@@ -1,40 +1,41 @@
 package com.pinyougou.sellergoods.service;
-import java.util.List;
+
+import com.pinyougou.entity.PageResult;
 import com.pinyougou.pojo.TbItemCat;
 
-import entity.PageResult;
+import java.util.List;
 
 /**
  * 服务层接口
  * @author Kyle.Wang
  * 2018-03-13 23:26
  */
-public interface ItemCatService {
+interface ItemCatService {
 
 	/**
 	 * 返回全部列表
 	 * @return
 	 */
-	public List<TbItemCat> findAll();
+	List<TbItemCat> findAll();
 	
 	
 	/**
 	 * 返回分页列表
 	 * @return
 	 */
-	public PageResult findPage(int pageNum, int pageSize);
+	PageResult findPage(int pageNum, int pageSize);
 	
 	
 	/**
 	 * 增加
 	*/
-	public void add(TbItemCat itemCat);
+	void add(TbItemCat itemCat);
 	
 	
 	/**
 	 * 修改
 	 */
-	public void update(TbItemCat itemCat);
+	void update(TbItemCat itemCat);
 	
 
 	/**
@@ -42,14 +43,14 @@ public interface ItemCatService {
 	 * @param id
 	 * @return
 	 */
-	public TbItemCat findOne(Long id);
+	TbItemCat findOne(Long id);
 	
 	
 	/**
 	 * 批量删除
 	 * @param ids
 	 */
-	public void delete(Long[] ids);
+	void delete(Long[] ids);
 
 	/**
 	 * 分页
@@ -57,6 +58,6 @@ public interface ItemCatService {
 	 * @param pageSize 每页记录数
 	 * @return
 	 */
-	public PageResult findPage(TbItemCat itemCat, int pageNum, int pageSize);
+	PageResult findPage(TbItemCat itemCat, int pageNum, int pageSize);
 	
 }
