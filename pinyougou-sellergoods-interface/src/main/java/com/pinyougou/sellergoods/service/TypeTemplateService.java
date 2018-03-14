@@ -10,7 +10,7 @@ import java.util.List;
  * @author Kyle.Wang
  * 2018-03-13 23:27
  */
-interface TypeTemplateService {
+public interface TypeTemplateService {
 
 	/**
 	 * 返回全部列表

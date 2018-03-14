@@ -10,7 +10,7 @@ import java.util.List;
  * @author Kyle.Wang
  * 2018-03-13 23:26
  */
-interface GoodsService {
+public interface GoodsService {
 
 	/**
 	 * 返回全部列表

@@ -12,7 +12,7 @@ import java.util.Map;
  * @author Kyle.Wang
  * 2018-03-13 23:27
  */
-interface SpecificationService {
+public interface SpecificationService {
 
 	/**
 	 * 返回全部列表

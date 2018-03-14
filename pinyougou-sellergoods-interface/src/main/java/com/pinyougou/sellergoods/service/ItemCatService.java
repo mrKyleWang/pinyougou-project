@@ -10,7 +10,7 @@ import java.util.List;
  * @author Kyle.Wang
  * 2018-03-13 23:26
  */
-interface ItemCatService {
+public interface ItemCatService {
 
 	/**
 	 * 返回全部列表
